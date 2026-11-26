@@ -13,8 +13,8 @@ final class PedroChassisCalibration {
     static final double TEST_POWER = 0.25;
     // Record values from this year's robot. See DRIVETRAIN_BRINGUP.md.
     static final boolean VERIFIED = false;
-    static final double TRACK_WIDTH_IN = Double.NaN;
-    static final double WHEELBASE_IN = Double.NaN;
+    static final double TRACK_WIDTH_IN = ((413.0 + 418.0) / 2) / 25.4; // Front and rear measured in mm.
+    static final double WHEELBASE_IN = ((337.0 + 338.0) / 2) / 25.4; // Left and right measured in mm.
     static final double FORWARD_IN_PER_SUM_TICK = Double.NaN;
     static final double STRAFE_IN_PER_SUM_TICK = Double.NaN;
     static final double TURN_SCALE = Double.NaN;
