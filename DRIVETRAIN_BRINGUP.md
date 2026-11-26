@@ -67,3 +67,9 @@ java -cp "$classes" org.firstinspires.ftc.teamcode.BiobuzzAutoChecks
 On a clear floor, tape the start centre and heading. Select **Drive Calibration**, press INIT and START, then centre the sticks and press **A** with the right bumper released. This zeros the display for one trial without resetting the motor encoders.
 
 Hold the right bumper and use the normal sticks to drive at up to 20% power. For a calibration run, command one axis at a time. Release the bumper to brake. Wait for **RESULT**, then copy the four signed tick changes and measure the actual displacement or turn. The result stays on screen even if you reposition the robot. Centre the sticks and press A with the bumper released to begin the next trial. Use the scale formulas above. If it stays at **SETTLING**, check that the robot has stopped and the encoder readings are steady before recording results.
+
+## Drive and collect Pollen
+
+In the active Driver Station configuration, name the additional motor `intakeMotor` on its actual motor port. If the four drive motors use all four Control Hub ports, configure the intake on a powered, connected Expansion Hub. Scan for the additional hub and preserve your verified wheel names and ports.
+
+Select **Drive + Intake → INIT → START**. Tap **Cross (A)** to toggle the intake at 50% power. The intake uses the reversed motor direction and begins off. Check that the roller pulls Pollen in. The driving controls are the same as Drive Only. Releasing R1 stops the drive wheels while the intake continues until you tap Cross again or press STOP. Keep fingers and loose wires clear of the roller.
