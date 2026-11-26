@@ -61,3 +61,9 @@ classes=$(mktemp -d)
 javac -d "$classes" "$src/BiobuzzAutoRoute.java" "$src/BiobuzzAutoSequence.java" tools/auto-tests/BiobuzzAutoChecks.java
 java -cp "$classes" org.firstinspires.ftc.teamcode.BiobuzzAutoChecks
 ```
+
+## Powered encoder measurements with Drive Calibration
+
+On a clear floor, tape the start centre and heading. Select **Drive Calibration**, press INIT and START, then centre the sticks and press **A** with the right bumper released. This zeros the display for one trial without resetting the motor encoders.
+
+Hold the right bumper and use the normal sticks to drive at up to 20% power. For a calibration run, command one axis at a time. Release the bumper to brake. Wait for **RESULT**, then copy the four signed tick changes and measure the actual displacement or turn. The result stays on screen even if you reposition the robot. Centre the sticks and press A with the bumper released to begin the next trial. Use the scale formulas above. If it stays at **SETTLING**, check that the robot has stopped and the encoder readings are steady before recording results.
