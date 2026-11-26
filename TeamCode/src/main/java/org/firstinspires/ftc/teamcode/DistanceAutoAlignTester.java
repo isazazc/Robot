@@ -33,10 +33,10 @@ public class DistanceAutoAlignTester extends LinearOpMode {
         backLeft = hardwareMap.get(DcMotor.class, "backLeft");
         backRight = hardwareMap.get(DcMotor.class, "backRight");
 
-        frontLeft.setDirection(DcMotor.Direction.REVERSE);
-        backLeft.setDirection(DcMotor.Direction.FORWARD);
-        frontRight.setDirection(DcMotor.Direction.FORWARD);
-        backRight.setDirection(DcMotor.Direction.FORWARD);
+        frontLeft.setDirection(MecanumDrive.DIRECTIONS[0]);
+        backLeft.setDirection(MecanumDrive.DIRECTIONS[2]);
+        frontRight.setDirection(MecanumDrive.DIRECTIONS[1]);
+        backRight.setDirection(MecanumDrive.DIRECTIONS[3]);
 
         limelight.setPollRateHz(100);
         limelight.start();

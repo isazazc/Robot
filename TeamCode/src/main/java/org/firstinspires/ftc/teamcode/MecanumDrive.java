@@ -7,9 +7,9 @@ import com.qualcomm.robotcore.hardware.HardwareMap;
 final class MecanumDrive {
     static final double STICK_DEADBAND = 0.06;
     static final String[] NAMES = {"frontLeft", "frontRight", "backLeft", "backRight"};
-    // Inherited from last year's code. Verify each direction on the current chassis.
+    // Front-left direction corrected after Wheel Check on the current chassis.
     static final DcMotorSimple.Direction[] DIRECTIONS = {
-            DcMotorSimple.Direction.REVERSE, DcMotorSimple.Direction.FORWARD,
+            DcMotorSimple.Direction.FORWARD, DcMotorSimple.Direction.FORWARD,
             DcMotorSimple.Direction.FORWARD, DcMotorSimple.Direction.FORWARD
     };
 
